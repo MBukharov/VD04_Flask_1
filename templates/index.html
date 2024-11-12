@@ -1,70 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Фанаты УНИКС</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
-<div>
-  <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="/">Главная</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/players">Игроки</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/contacts">Контакты</a>
-      </li>
-    </ul>
-</div>
+{% extends 'shablon.html' %}
 
-<div id="carouselExampleCaptions" class="carousel slide" style="max-width: 800px; margin-left: auto;margin-right: auto;margin-top: 50px">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner" >
-    <div class="carousel-item active">
-      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Funics.ru%2F&psig=AOvVaw189BDLSf6P98dOxwyrGSDG&ust=1731087022271000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCIDtnO_fyokDFQAAAAAdAAAAABAE"><img src="https://img.youtube.com/vi/7nrzhY7RUyE/mqdefault.jpg" class="d-block w-100" alt="Подготовка к сезону" ></a>
-      <div class="carousel-caption d-none d-md-block">
-        <p></p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Funics.ru%2F&psig=AOvVaw189BDLSf6P98dOxwyrGSDG&ust=1731087022271000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCIDtnO_fyokDFQAAAAAdAAAAABAK"><img src="https://img.youtube.com/vi/vs272FvWf1Y/mqdefault.jpg" class="d-block w-100" alt="Хайлайты"></a>
-      <div class="carousel-caption d-none d-md-block">
-      <p></p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Funics.ru%2Fmedia%2Fphoto%2F&psig=AOvVaw189BDLSf6P98dOxwyrGSDG&ust=1731087022271000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCIDtnO_fyokDFQAAAAAdAAAAABAS"><img src="https://unics.ru/upload/resize_cache/iblock/09b/404_270_2/rg8rx6u4v6uz403g3vc44m5g1y1pm9lz.jpg" class="d-block w-100" alt="..."></a>
-      <div class="carousel-caption d-none d-md-block">
-        <p>ФОТОАЛЬБОМ</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Предыдущий</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Следующий</span>
-  </button>
-</div>
+{% block title %}
+    Фанаты УНИКС
+{% endblock %}
 
-<footer class="bg-light text-center py-4" style="margin-top:50px">
-    <p>Контактная информация: fanats-unics@yandex.ru</p>
-    <p>Социальные сети:
-        <a href="#">Telegram</a> |
-        <a href="#">VK</a> |
-        <a href="#">Instagram</a>
-    </p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+{% block body %}
+    <div id="carouselExampleCaptions" class="carousel slide" style="max-width: 800px; margin-left: auto;margin-right: auto;margin-top: 50px">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" >
+        <div class="carousel-item active">
+          <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Funics.ru%2F&psig=AOvVaw189BDLSf6P98dOxwyrGSDG&ust=1731087022271000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCIDtnO_fyokDFQAAAAAdAAAAABAE"><img src="https://img.youtube.com/vi/7nrzhY7RUyE/mqdefault.jpg" class="d-block w-100" alt="Подготовка к сезону" ></a>
+          <div class="carousel-caption d-none d-md-block">
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Funics.ru%2F&psig=AOvVaw189BDLSf6P98dOxwyrGSDG&ust=1731087022271000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCIDtnO_fyokDFQAAAAAdAAAAABAK"><img src="https://img.youtube.com/vi/vs272FvWf1Y/mqdefault.jpg" class="d-block w-100" alt="Хайлайты"></a>
+          <div class="carousel-caption d-none d-md-block">
+          <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Funics.ru%2Fmedia%2Fphoto%2F&psig=AOvVaw189BDLSf6P98dOxwyrGSDG&ust=1731087022271000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCIDtnO_fyokDFQAAAAAdAAAAABAS"><img src="https://unics.ru/upload/resize_cache/iblock/09b/404_270_2/rg8rx6u4v6uz403g3vc44m5g1y1pm9lz.jpg" class="d-block w-100" alt="..."></a>
+          <div class="carousel-caption d-none d-md-block">
+            <p>ФОТОАЛЬБОМ</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+      </button>
+    </div>
+{% endblock %}
